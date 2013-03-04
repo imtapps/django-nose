@@ -6,7 +6,7 @@ ROOT = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='django-nose',
-    version='1.1',
+    version='1.1.IMT',
     description='Makes your Django tests simple and snappy',
     long_description=open(os.path.join(ROOT, 'README.rst')).read(),
     author='Jeff Balogh',
@@ -18,7 +18,7 @@ setup(
     packages=find_packages(exclude=['testapp', 'testapp/*']),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['nose>=1.2.1', 'Django>=1.2'],
+    install_requires=['nose>=1.2.1', 'Django<1.5.0'],
     tests_require=['south>=0.7'],
     # This blows up tox runs that install django-nose into a virtualenv,
     # because it causes Nose to import django_nose.runner before the Django

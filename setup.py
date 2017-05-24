@@ -35,7 +35,7 @@ _(Older changes can be found in the full documentation)._
     return long_description
 
 setup(
-    name='django-nose',
+    name='django-nose-imt',
     version='1.4.4',
     description='Makes your Django tests simple and snappy',
     long_description=get_long_description('django-nose'),
